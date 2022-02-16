@@ -11,16 +11,23 @@ cv.imshow('Blank', blank)
 
 
 #2 draw a rectangle
-cv.rectangle(blank, (0,0), (blank.shape[1]//2, blank.shape[0]),(0,255,0), thickness = 2)
-cv.imshow('rectangle', blank)
+#cv.rectangle(blank, (0,0), (blank.shape[1]//2, blank.shape[0]),(0,255,0), thickness = 2)
+#cv.imshow('rectangle', blank)
 
 
 # now a circle!
-cv.circle(blank,(blank.shape[1]//2, blank.shape[0]//2), 40,(0,0,255), thickness = 1)
-cv.imshow('circle', blank)
+#cv.circle(blank,(blank.shape[1]//2, blank.shape[0]//2), 40,(0,0,255), thickness = 1)
+#cv.imshow('circle', blank)
 
 #A LINE!
-cv.line(blank,(0,0),(blank.shape[1]//2, blank.shape[0]//2),(255,255,255), thickness = 3) 
-cv.imshow('line', blank)
+#cv.line(blank,(100,250),(300,400),(255,255,255), thickness = 3) 
+#cv.imshow('line', blank)
+
+#text
+cv.putText(blank,'Hello, world, leon here',(0,225), cv.FONT_HERSHEY_TRIPLEX, 1.0, (0,255,0), thickness = 2)
+cv.imshow('Text', blank)
+
 cv.waitKey(0)
+
+
 
