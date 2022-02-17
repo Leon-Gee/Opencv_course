@@ -34,7 +34,7 @@ cv.imshow('medium', medium)
 #Bilateral
 #the most effective
 #Bilateral blur the images but it keeps the edges of the image 
-bilateral = cv.bilateralFilter(img, 5, 15, 15)
+bilateral = cv.bilateralFilter(img, 5, 35, 15)
 cv.imshow('bilateral', bilateral)
 
 cv.waitKey(0)
